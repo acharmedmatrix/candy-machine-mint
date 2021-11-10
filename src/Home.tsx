@@ -172,8 +172,6 @@ const Home = (props: HomeProps) => {
       )}
 
       {wallet && <p>Your Wallet Balance: {(balance || 0).toLocaleString()} SOL</p>}
-      
-      {wallet && <p>Lottery Start Time: {goLiveDate}</p>}
 
       {wallet && <p>Tokens Available at 0.4 SOL: {itemsAvailable}</p>}
 
