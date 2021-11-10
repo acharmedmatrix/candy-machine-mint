@@ -171,13 +171,15 @@ const Home = (props: HomeProps) => {
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
+      {wallet && <p>Your Wallet Balance: {(balance || 0).toLocaleString()} SOL</p>}
+      
+      {wallet && <p>Lottery Start Time: {goLiveDate}</p>}
 
-      {wallet && <p>Tickets Available at 0.4 SOL: {itemsAvailable}</p>}
+      {wallet && <p>Tokens Available at 0.4 SOL: {itemsAvailable}</p>}
 
-      {wallet && <p>Tickets Redeemed: {itemsRedeemed}</p>}
+      {wallet && <p>Tokens Redeemed: {itemsRedeemed}</p>}
 
-      {wallet && <p>Tickets Remaining: {itemsRemaining}</p>}
+      {wallet && <p>Tokens Remaining: {itemsRemaining}</p>}
 
       <MintContainer>
         {!wallet ? (
