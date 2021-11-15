@@ -173,7 +173,7 @@ const Home = (props: HomeProps) => {
 
       {wallet && <p>Your Wallet Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-      {wallet && <p>Tokens Available at 0.5 SOL: {itemsAvailable}</p>}
+      {wallet && <p>Tokens Available at 0.5SOL: {itemsAvailable}</p>}
 
       {wallet && <p>Tokens Redeemed: {itemsRedeemed}</p>}
 
